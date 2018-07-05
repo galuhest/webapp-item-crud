@@ -18,8 +18,8 @@ before_install:
   - sudo mysql_upgrade -u root -proot
   - sudo service mysql restart
 install:
+  - gem install mysql
   - gem install ./item-0.1.0.gem
   - bundle install
 script:
-  - gem install mysql
   - bundle exec rspec spec
