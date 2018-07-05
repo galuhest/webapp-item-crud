@@ -9,6 +9,7 @@ get '/' do
 	"Hello World!"
 end
 
+# Mengambil nama user berdasarkan id
 get '/item/:id' do |id|
 	content_type :json
 	names = Item.get(id)
@@ -16,6 +17,7 @@ get '/item/:id' do |id|
 	response.to_json
 end
 
+# Memasukan user baru kedalam database
 post '/item' do
 	content_type :json
 	name = params[:name]
@@ -24,6 +26,7 @@ post '/item' do
 	response.to_json
 end
  
+# Merubah nama user berdasarkan id
 post '/item/:id' do |id|
 	content_type :json
 	status = Item.update(id, params['name'])
@@ -31,6 +34,7 @@ post '/item/:id' do |id|
 	response.to_json
 end
 
+# Menghapus user berdasarkan id
 post '/item/:id/delete' do |id|
 	content_type :json
 	status = Item.delete(id)

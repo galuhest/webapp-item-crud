@@ -35,6 +35,7 @@ RSpec.describe "Item Webapp" do
 		expect(response["status"]).to eq "OK"
 	end
 
+	# Mengambalikan response dari server dalam bentuk json
   def response_body
     JSON.parse(last_response.body)
   end
