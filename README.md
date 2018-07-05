@@ -4,6 +4,11 @@ Welcome to your new gem! In this directory, you'll find the files you need to be
 
 TODO: Delete this and the text above, and describe your gem
 
+## Dependencies
+
+* Ruby 2.3.1
+* Mysql 5.7
+
 ## Installation
 
 Add this line to your application's Gemfile:
