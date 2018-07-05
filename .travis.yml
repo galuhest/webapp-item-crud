@@ -21,4 +21,6 @@ install:
   - gem install mysql
   - bundle install
 script:
+  - gem build item-crud.gemspec
+  - gem install ./item-0.1.0.gem
   - bundle exec rspec spec

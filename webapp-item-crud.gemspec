@@ -1,11 +1,10 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "webapp/item/crud/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "webapp-item-crud"
-  spec.version       = Webapp::Item::Crud::VERSION
+  spec.version       = "0.0.1"
   spec.authors       = ["Galuh Estya"]
   spec.email         = ["galuhestya@gmail.com"]
 
