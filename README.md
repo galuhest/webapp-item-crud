@@ -10,20 +10,18 @@ TODO: Delete this and the text above, and describe your gem
 * Mysql 5.7
 
 ## Route
-
-* GET 
-	root
-	/
-* Get item name
+### root
+	GET /
+### Get item name
 	GET /item/{id}
-* Create Item
+### Create Item
 	POST /item
-	Body
+#### Body
 	* name
-* Change item name
+### Change item name
 	POST /item/{id}
-	Body
+#### Body
 	* name
-* Delete item
+### Delete item
 	POST /item/{id}/delete
  
