@@ -16,12 +16,12 @@ TODO: Delete this and the text above, and describe your gem
 	GET /item/{id}
 ### Create Item
 	POST /item
-#### Body
-	* name
+	Body :
+	name
 ### Change item name
 	POST /item/{id}
-#### Body
-	* name
+	Body :
+	name
 ### Delete item
 	POST /item/{id}/delete
  
