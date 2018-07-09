@@ -1,15 +1,16 @@
 PATH
   remote: .
   specs:
-    webapp-item-crud (0.0.1)
+    webapp_item_crud (0.0.1)
 
 GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.3)
     dotenv (2.5.0)
-    item (0.1.0)
+    item_crud (0.1.1)
     mustermann (1.0.2)
+    mysql (2.9.1)
     rack (2.0.5)
     rack-protection (2.0.3)
       rack
@@ -42,12 +43,13 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.16)
   dotenv
-  item
+  item_crud (~> 0.1.1)
+  mysql
   rack-test
   rake (~> 10.0)
   rspec (~> 3.0)
   sinatra
-  webapp-item-crud!
+  webapp_item_crud!
 
 BUNDLED WITH
    1.16.2

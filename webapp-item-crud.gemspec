@@ -3,7 +3,7 @@ lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = "webapp-item-crud"
+  spec.name          = "webapp_item_crud"
   spec.version       = "0.0.1"
   spec.authors       = ["Galuh Estya"]
   spec.email         = ["galuhestya@gmail.com"]
@@ -38,6 +38,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "sinatra"
   spec.add_development_dependency "dotenv"
   spec.add_development_dependency "mysql"
-  spec.add_development_dependency "item"
-
+  spec.add_development_dependency 'item_crud', '~> 0.1.1'
 end

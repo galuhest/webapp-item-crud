@@ -19,7 +19,6 @@ before_install:
   - sudo service mysql restart
 install:
   - gem install mysql
-  - gem install ./item-0.1.0.gem
   - bundle install
 script:
   - bundle exec rspec spec
