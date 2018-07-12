@@ -1,11 +1,10 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "webapp/item/crud/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "webapp-item-crud"
-  spec.version       = Webapp::Item::Crud::VERSION
+  spec.name          = "webapp_item_crud"
+  spec.version       = "0.0.1"
   spec.authors       = ["Galuh Estya"]
   spec.email         = ["galuhestya@gmail.com"]
 
@@ -35,5 +34,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rack-test"
   spec.add_development_dependency "sinatra"
+  spec.add_development_dependency "dotenv"
+  spec.add_development_dependency "mysql"
+  spec.add_development_dependency 'item_crud', '~> 0.1.1'
 end
